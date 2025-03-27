@@ -109,3 +109,109 @@ document.addEventListener('DOMContentLoaded', function() {
     `;
     document.head.appendChild(style);
 });
+document.addEventListener('DOMContentLoaded', function() {
+    // Productos para el modal
+    const productos = [
+        "Cuadros originales",
+        "Cuadros de madera con luces",
+        "Cuadros de cartulina gruesa",
+        "Portafotos de acrílico",
+        "Llaveros personalizados",
+        "Acordeón de recuerdos con fotos",
+        "Tendedera de fotos sencillas",
+        "Tendederas de fotos con luces",
+        "Marco de madera con luces y tendedera",
+        "Cajas personalizadas",
+        "Bolsas de regalos",
+        "Sobres personalizados",
+        "Tarjetas de presentación",
+        "Invitaciones para eventos festivos",
+        "Impresiones en papel fotográfico",
+        "Fotos polaroid",
+        "Impresiones en papel normal (color/B&N)",
+        "Escaneo de documentos",
+        "Fotocopias",
+        "Impresiones en cartulina"
+    ];
+
+    // Elementos del DOM
+    const modal = document.getElementById('catalogoModal');
+    const verCatalogoBtn = document.getElementById('verCatalogoBtn');
+    const closeModal = document.querySelector('.close-modal');
+    const modalProductos = document.querySelector('.modal-productos');
+
+    // Función para abrir el modal
+    verCatalogoBtn.addEventListener('click', function() {
+        // Limpiar y cargar productos en el modal
+        modalProductos.innerHTML = '';
+        productos.forEach(producto => {
+            const productoItem = document.createElement('div');
+            productoItem.className = 'producto-item';
+            productoItem.innerHTML = `<p>${producto}</p>`;
+            modalProductos.appendChild(productoItem);
+        });
+        
+        modal.style.display = 'block';
+        document.body.style.overflow = 'hidden'; // Prevenir scroll
+    });
+
+    // Función para cerrar el modal
+    closeModal.addEventListener('click', function() {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    });
+
+    // Cerrar al hacer clic fuera del modal
+    window.addEventListener('click', function(event) {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+    });
+
+    // Efecto de hover para las categorías (puedes personalizar más)
+    const categorias = document.querySelectorAll('.categoria');
+    categorias.forEach(categoria => {
+        categoria.addEventListener('mouseenter', function() {
+            this.style.boxShadow = '0 10px 20px rgba(0,0,0,0.15)';
+        });
+        
+        categoria.addEventListener('mouseleave', function() {
+            this.style.boxShadow = '0 3px 10px rgba(0,0,0,0.1)';
+        });
+    });
+});
+document.addEventListener('DOMContentLoaded', function() {
+    // Efecto hover para las tarjetas de contacto
+    const infoCards = document.querySelectorAll('.info-card, .redes-card');
+    
+    infoCards.forEach(card => {
+        card.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-5px)';
+            this.style.boxShadow = '0 10px 25px rgba(0,0,0,0.1)';
+        });
+        
+        card.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0)';
+            this.style.boxShadow = '0 5px 15px rgba(0,0,0,0.05)';
+        });
+    });
+    
+    // Botón del mapa (puedes personalizar esta función)
+    const mapaButton = document.querySelector('.mapa-button');
+    if(mapaButton) {
+        mapaButton.addEventListener('click', function() {
+            alert('Aquí puedes mostrar la dirección completa o redirigir a Google Maps');
+            // window.open('URL_DE_GOOGLE_MAPS', '_blank');
+        });
+    }
+    
+    // Efecto de carga para los elementos
+    const contactoItems = document.querySelectorAll('.info-item, .red-social');
+    contactoItems.forEach((item, index) => {
+        setTimeout(() => {
+            item.style.opacity = '1';
+            item.style.transform = 'translateY(0)';
+        }, index * 100);
+    });
+});

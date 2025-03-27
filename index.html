@@ -23,43 +23,72 @@
 
     <main>
         <!-- Sección de Servicios -->
-        <section id="servicios">
-            <h2>¿Que hacemos? </h2>
-            <p>Somos una imprenta especializada en personalizacion de gran variedad de productos, una forma diferente de recordar la vida </p>
-            <div class="servicio">
-                <h3>Catalogo</h3>
-                <p>A continuacion se muestra un listado con los productos con los que contamos .</p>
+        <section id="servicios" class="servicios-section">
+            <div class="servicios-container">
+                <h2 class="section-title">¿Qué Ofrecemos?</h2>
+                <p class="section-subtitle">Somos una imprenta especializada en personalización de productos, creando recuerdos únicos para tus momentos especiales</p>
+                
+                <div class="servicio-destacado">
+                    <div class="servicio-info">
+                        <h3>Nuestro Catálogo</h3>
+                        <p>Descubre nuestra amplia variedad de productos personalizados para cada ocasión.</p>
+                        <button class="cta-button" id="verCatalogoBtn">Ver Catálogo Completo</button>
+                    </div>
+                    <div class="servicio-imagen">
+                        <img src="https://via.placeholder.com/400x300" alt="Productos personalizados" class="servicio-img">
+                    </div>
+                </div>
+                
+                <div class="categorias-container">
+                    <div class="categoria">
+                        <h3 class="categoria-titulo">Recuerdos y Decoración</h3>
+                        <ul class="productos-lista">
+                            <li><i class="fas fa-image"></i> Cuadros originales</li>
+                            <li><i class="fas fa-lightbulb"></i> Cuadros de madera con luces</li>
+                            <li><i class="fas fa-palette"></i> Cuadros de cartulina gruesa</li>
+                            <li><i class="fas fa-portrait"></i> Portafotos de acrílico</li>
+                            <li><i class="fas fa-images"></i> Acordeón de recuerdos con fotos</li>
+                            <li><i class="fas fa-photo-video"></i> Tendedera de fotos sencillas</li>
+                            <li><i class="fas fa-star"></i> Tendederas de fotos con luces</li>
+                            <li><i class="fas fa-border-style"></i> Marco de madera con luces y tendedera</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="categoria">
+                        <h3 class="categoria-titulo">Regalos Personalizados</h3>
+                        <ul class="productos-lista">
+                            <li><i class="fas fa-key"></i> Llaveros personalizados</li>
+                            <li><i class="fas fa-box-open"></i> Cajas personalizadas</li>
+                            <li><i class="fas fa-shopping-bag"></i> Bolsas de regalos</li>
+                            <li><i class="fas fa-envelope"></i> Sobres personalizados</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="categoria">
+                        <h3 class="categoria-titulo">Impresiones y Papelería</h3>
+                        <ul class="productos-lista">
+                            <li><i class="fas fa-address-card"></i> Tarjetas de presentación</li>
+                            <li><i class="fas fa-calendar-alt"></i> Invitaciones para eventos festivos</li>
+                            <li><i class="fas fa-print"></i> Impresiones en papel fotográfico</li>
+                            <li><i class="fas fa-camera"></i> Fotos polaroid</li>
+                            <li><i class="fas fa-file-alt"></i> Impresiones en papel normal (color/B&N)</li>
+                            <li><i class="fas fa-copy"></i> Fotocopias</li>
+                            <li><i class="fas fa-scroll"></i> Impresiones en cartulina</li>
+                            <li><i class="fas fa-scanner"></i> Escaneo de documentos</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             
-           <li>
-            <u>Cuadros originales</u>
-           </li>
-           <li>
-            <u>Cuadros de madera con luces </u>
-           </li>
-           <li>
-            <u>Cuadros de cartulina gruesa </u>
-           </li>
-           <li>
-            <u>Portafotos de acrílico </u>
-           </li>
-           <li>
-            <u>Llaveros personalizados</u>
-            <li><u>Acordeon de recuerdos con fotos</u></li>
-            <li><u>Tendedera de fotos sencillas </u></li>
-            <li><u>Tenderas de fotos con luces</u></li>
-            <li><u>Marco de madera con luces y tendedera</u></li>
-            <li><u>Cajas personalizados </u></li>
-            <li><u>Bolsas de regalos</u></li>
-            <li><u>Sobres personalizados</u></li>
-            <li><u>Tarjetas de presentación</u></li>
-            <li><u>Invitaciones para eventos festivo</u></li>
-            <li><u>Impresiones en papel fotográfico  </u></li>
-            <li><u>Fotos polaroid</u></li>
-            <li><u>Impresiones en  papel normal a color y en blanco y negro</u></li>
-            <li><u>Escaneo</u></li>
-            <li><u>Fotocopias</u></li>
-            <li><u>Impresiones en Cartulina</u></li>
+            <div class="modal" id="catalogoModal">
+                <div class="modal-content">
+                    <span class="close-modal">&times;</span>
+                    <h3>Catálogo Completo de Productos</h3>
+                    <div class="modal-productos">
+                        <!-- Los productos se cargarán aquí dinámicamente con JavaScript -->
+                    </div>
+                </div>
+            </div>
         </section>
 <!-- Sección de Galería -->
         <section id="galeria" class="gallery">
@@ -123,29 +152,90 @@
         </section>
 
         <!-- Sección de Contacto -->
-        <section id="contacto">
-            <h2>¡¡¡¡Visitenos en nuestras redes sociales!!!!</h2>
-            <p>Si usted esta interesado no dude en contactarme</p>
-            
-            <div class="info-contacto">
-                <p><strong>Teléfono:</strong> +5355366712</p>
-                <p><strong>Email:</strong> contacto@dyarte.com</p>
-                <p><strong>Horario:</strong> Lunes a Viernes 9:00 - 18:00</p>
-            </div>
-            <div class="contacto-columna redes-sociales">
-                <h3>Síguenos en redes</h3>
-                <div class="redes-container">
-                    <a href="https://www.facebook.com/tu_pagina" target="_blank" class="red-social facebook">
-                        <i class="fab fa-facebook-f"></i>
-                        <span>Facebook</span>
-                    </a>
-                    <a href="https://www.instagram.com/tu_usuario" target="_blank" class="red-social instagram">
-                        <i class="fab fa-instagram"></i>
-                        <span>Instagram</span>
-                    </a>
+        <section id="contacto" class="contacto-section">
+            <div class="contacto-container">
+                <div class="contacto-header">
+                    <h2 class="contacto-title">¡Contáctanos!</h2>
+                    <p class="contacto-subtitle">Estamos aquí para ayudarte a crear recuerdos únicos</p>
+                </div>
+                
+                <div class="contacto-grid">
+                    <div class="contacto-info">
+                        <div class="info-card">
+                            <h3 class="info-title">Información de Contacto</h3>
+                            <div class="info-item">
+                                <i class="fas fa-phone-alt"></i>
+                                <div>
+                                    <h4>Teléfono</h4>
+                                    <p>+53 55366712</p>
+                                    <a href="tel:+5355366712" class="contacto-link">Llamar ahora</a>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>contacto@dyarte.com</p>
+                                    <a href="mailto:contacto@dyarte.com" class="contacto-link">Enviar email</a>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <h4>Horario de atención</h4>
+                                    <p>Lunes a Viernes: 9:00 - 18:00</p>
+                                    <p>Sábados: 10:00 - 14:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contacto-redes">
+                        <div class="redes-card">
+                            <h3 class="redes-title">Síguenos en redes</h3>
+                            <p class="redes-subtitle">Mantente al día con nuestros últimos trabajos y promociones</p>
+                            
+                            <div class="redes-sociales">
+                                <a href="https://www.facebook.com/tu_pagina" target="_blank" class="red-social facebook">
+                                    <div class="red-icon">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </div>
+                                    <div class="red-info">
+                                        <span class="red-name">Facebook</span>
+                                        <span class="red-user">@dyarte</span>
+                                    </div>
+                                </a>
+                                
+                                <a href="https://www.instagram.com/dyarte_habana" target="_blank" class="red-social instagram">
+                                    <div class="red-icon">
+                                        <i class="fab fa-instagram"></i>
+                                    </div>
+                                    <div class="red-info">
+                                        <span class="red-name">Instagram</span>
+                                        <span class="red-user">@dyarte</span>
+                                    </div>
+                                </a>
+                                
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contacto-mapa">
+                    <h3 class="mapa-title">¿Dónde encontrarnos?</h3>
+                    <div class="mapa-container">
+                        <!-- Aquí puedes insertar tu mapa de Google Maps o similar -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345..."></iframe>
+                        <div class="mapa-overlay">
+                            <button class="mapa-button">Ver dirección completa</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
 
             
             <a href="https://wa.me/+5355366712" class="whatsapp-button" target="_blank">
