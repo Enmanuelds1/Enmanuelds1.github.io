@@ -197,14 +197,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Botón del mapa (puedes personalizar esta función)
-    const mapaButton = document.querySelector('.mapa-button');
-    if(mapaButton) {
-        mapaButton.addEventListener('click', function() {
-            alert('Aquí puedes mostrar la dirección completa o redirigir a Google Maps');
-            // window.open('URL_DE_GOOGLE_MAPS', '_blank');
-        });
-    }
+   
     
     // Efecto de carga para los elementos
     const contactoItems = document.querySelectorAll('.info-item, .red-social');
