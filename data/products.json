@@ -1,0 +1,226 @@
+{
+  "featured": [
+    {
+      "id": 1,
+      "name": "Ropa Vieja",
+      "description": "Plato nacional de Cuba, carne desmenuzada cocida con tomate, pimientos y especias, servida con arroz blanco y plátanos maduros.",
+      "price": 1200,
+      "image": "ropavieja.jpg",
+      "category": "comida-criolla",
+      "badge": "Popular"
+    },
+    {
+      "id": 2,
+      "name": "Lasagna Bolognesa",
+      "description": "Deliciosa lasaña casera con carne molida, salsa bolognesa y mucho queso.",
+      "price": 800,
+      "image": "lasagna.jpg",
+      "category": "italiana",
+      "badge": "Nuevo"
+    },
+    {
+      "id": 3,
+      "name": "Mojito Cubano",
+      "description": "El cóctel más famoso de Cuba: ron blanco, azúcar, menta, lima, soda y hielo.",
+      "price": 750 ,
+      "image": "mojito.jpg",
+      "category": "bebidas",
+      "badge": "Recomendado"
+    },
+    {
+      "id": 4,
+      "name": "Lechón Asado",
+      "description": "Pierna de cerdo marinada con mojo criollo y asada lentamente hasta quedar dorada y jugosa.",
+      "price": 650,
+      "image": "cerdoasado.jpg",
+      "category": "comida-criolla",
+      "badge": "Especial"
+    }
+  ],
+  "comidaCriolla": [
+    {
+      "id": 5,
+      "name": "Arroz Congrí",
+      "description": "Arroz cocido con frijoles negros, considerando uno de los platos más típicos de Cuba.",
+      "price": 400,
+      "image": "congri.jpg",
+      "category": "comida-criolla"
+    },
+    {
+      "id": 6,
+      "name": "Picadillo a la Criolla",
+      "description": "Carne molida guisada con tomate, cebolla, ajo, aceitunas y alcaparras, servido con arroz blanco.",
+      "price": 675,
+      "image": "picadillo.jpg",
+      "category": "comida-criolla"
+    },
+    {
+      "id": 7,
+      "name": "Yuca con Mojo",
+      "description": "Yuca hervida acompañada de mojo criollo (ajo, naranja agria y aceite).",
+      "price": 315.00,
+      "image": "yuca-mojo.jpg",
+      "category": "comida-criolla"
+    },
+    {
+      "id": 8,
+      "name": "Tostones",
+      "description": "Plátanos verdes aplastados y fritos dos veces, crujientes por fuera y suaves por dentro.",
+      "price": 250,
+      "image": "tostones.jpeg",
+      "category": "comida-criolla"
+    },
+    {
+      "id": 9,
+      "name": "Tamal en Hoja",
+      "description": "Masa de maíz mezclada con carne de cerdo, envuelta en hojas de maíz y cocida al vapor.",
+      "price": 300,
+      "image": "tamal.jpg",
+      "category": "comida-criolla"
+    },
+    {
+      "id": 10,
+      "name": "Ajiaco Cubano",
+      "description": "Sopa espesa con diferentes tipos de carne, viandas y vegetales, típica de la cocina cubana.",
+      "price": 480,
+      "image": "ajiaco.jpg",
+      "category": "comida-criolla"
+    }
+  ],
+  "italiana": [
+    {
+      "id": 11,
+      "name": "Spaghetti Carbonara",
+      "description": "Pasta con salsa cremosa de huevo, queso parmesano, panceta y pimienta negra.",
+      "price": 850,
+      "image": "spaguetti.jpg",
+      "category": "italiana"
+    },
+    {
+      "id": 12,
+      "name": "Pizza Margherita",
+      "description": "Clásica pizza con salsa de tomate, mozzarella fresca y albahaca.",
+      "price": 1200,
+      "image": "pizza.jpg",
+      "category": "italiana",
+      "badge": "Nuevo"
+    },
+    {
+      "id": 13,
+      "name": "Risotto de Hongos",
+      "description": "Arroz arbóreo cremoso con mezcla de hongos silvestres y queso parmesano.",
+      "price": 550,
+      "image": "rizoto.jpg",
+      "category": "italiana"
+    },
+    {
+      "id": 14,
+      "name": "Ossobuco alla Milanese",
+      "description": "Rodajas de ternera con hueso cocinadas lentamente en vino blanco y caldo, servidas con gremolata.",
+      "price": 750,
+      "image": "osobuco.jpg",
+      "category": "italiana"
+    },
+    {
+      "id": 15,
+      "name": "Penne all'Arrabbiata",
+      "description": "Pasta penne con salsa de tomate picante con ajo y guindilla.",
+      "price": 360,
+      "image": "arrabiata.jpg",
+      "category": "italiana"
+    },
+    {
+      "id": 16,
+      "name": "Tiramisú",
+      "description": "Postre italiano con capas de bizcocho empapado en café y crema de mascarpone.",
+      "price": 700,
+      "image": "tiramisu.jpg",
+      "category": "italiana"
+    }
+  ],
+  "bebidas": [
+    {
+      "id": 17,
+      "name": "Daiquirí Natural",
+      "description": "El clásico cóctel cubano de ron, jugo de limón y azúcar, inventado en La Habana.",
+      "price": 350,
+      "image": "daikiri.jpg",
+      "category": "bebidas"
+    },
+    {
+      "id": 18,
+      "name": "Cuba Libre",
+      "description": "Ron cubano mezclado con refresco de cola y un toque de lima, servido con hielo.",
+      "price": 450.00,
+      "image": "cubalibre.jpeg",
+      "category": "bebidas"
+    },
+    {
+      "id": 19,
+      "name": "Cerveza Cristal",
+      "description": "La cerveza más popular de Cuba, ligera y refrescante.",
+      "price": 250.00,
+      "image": "cristal.jpg",
+      "category": "bebidas"
+    },
+    {
+      "id": 20,
+      "name": "Cerveza Bucanero",
+      "description": "La cerveza más fuerte de Cuba, refrescante con puro sabor cubano.",
+      "price": 250.00,
+      "image": "bucanero.jpg",
+      "category": "bebidas"
+    },
+    {
+      "id": 21,
+      "name": "Ron Havana Club Añejo",
+      "description": "Ron cubano añejado, perfecto para disfrutar solo o en cócteles.",
+      "price": 1500.00,
+      "image": "hclub.jpg",
+      "category": "bebidas"
+    },
+    {
+      "id": 22,
+      "name": "Batido de Mango",
+      "description": "Batido natural de mango, cremoso y refrescante.",
+      "price": 380.00,
+      "image": "mango.jpg",
+      "category": "bebidas"
+    }
+  ],
+  "postres": [
+    {
+      "id": 23,
+      "name": "Flan ",
+      "description": "El postre cubano por excelencia.",
+      "price": 550.00,
+      "image": "flan.jpg",
+      "category": "postres"
+    },
+    {
+      "id": 24,
+      "name": "Dulce de Leche",
+      "description": "Postre tradicional hecho con leche cuajada y caramelo.",
+      "price": 500.00,
+      "image": "leche.jpg",
+      "category": "postres"
+    },
+    {
+      "id": 25,
+      "name": "Tocinillo del Cielo",
+      "description": "Postre de yema de huevo y almíbar, de textura suave y dulce.",
+      "price": 200.00,
+      "image": "tocinillo.jpg",
+      "category": "postres"
+    },
+    {
+      "id": 26,
+      "name": "Buñuelos de Yuca",
+      "description": "Bolitas fritas de yuca con anís, servidas con almíbar de azúcar.",
+      "price": 110.00,
+      "image": "bunuelos.jpg",
+      "category": "postres"
+    }
+    
+  ]
+}

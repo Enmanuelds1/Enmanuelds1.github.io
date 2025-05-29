@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabores Cubano - Restaurante & Delivery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logo.png" type="image/png">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <link rel="icon" type="img/jpg" href="img/logo.jpg">
+        <div class="container header-container">
+            <div class="logo-container">
+                <img src="img/logo.jpg" alt="Sabores del Mundo" class="logo">
+            </div>
+            
+            <div class="header-info">
+                <h1>Sabores Cubano</h1>
+                <p>Comida cubana & Delivery</p>
+            </div>
+            
+            <div class="header-contact">
+                <p><i class="fas fa-phone"></i> +5352175957</p>
+                <p><i class="fas fa-clock"></i> Abierto: 12:00 - 23:00</p>
+            </div>
+            
+            <div class="cart-icon-container">
+                <i class="fas fa-shopping-cart" id="cart-icon"></i>
+                <span id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navegación -->
+    <nav>
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="#" class="nav-link active" data-section="home">Inicio</a></li>
+                <li><a href="#" class="nav-link" data-section="comida-criolla">Comida Criolla</a></li>
+                <li><a href="#" class="nav-link" data-section="italiana">Italiana</a></li>
+                <li><a href="#" class="nav-link" data-section="bebidas">Bebidas</a></li>
+                <li><a href="#" class="nav-link" data-section="postres">Postres</a></li>
+                <li><a href="#" class="nav-link" data-section="about">Nosotros</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main class="container">
+        <!-- Sección Inicio -->
+        <section id="home-section" class="section active-section">
+            <div class="hero">
+                <h2>Bienvenidos a Sabor Cubano</h2>
+                <p>Disfruta de los mejores platos internacionales y la mejor comida cubana con delivery a domicilio</p>
+                
+            </div>
+            
+            <div class="highlights">
+                <h3 class="section-title">Platos Destacados</h3>
+                <div class="products-grid" id="featured-products">
+                    <!-- Productos destacados se cargarán con JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Comida Criolla -->
+        <section id="comida-criolla-section" class="section">
+            <h2 class="section-title">Comida Criolla</h2>
+            <div class="products-grid" id="comida-criolla-products">
+                <!-- Productos se cargarán con JS -->
+            </div>
+        </section>
+
+        <!-- Sección Italiana -->
+        <section id="italiana-section" class="section">
+            <h2 class="section-title">Cocina Italiana</h2>
+            <div class="products-grid" id="italiana-products">
+                <!-- Productos se cargarán con JS -->
+            </div>
+        </section>
+
+        <!-- Sección Bebidas -->
+        <section id="bebidas-section" class="section">
+            <h2 class="section-title">Bebidas</h2>
+            <div class="products-grid" id="bebidas-products">
+                <!-- Productos se cargarán con JS -->
+            </div>
+        </section>
+
+        <!-- Sección Postres -->
+        <section id="postres-section" class="section">
+            <h2 class="section-title">Postres</h2>
+            <div class="products-grid" id="postres-products">
+                <!-- Productos se cargarán con JS -->
+            </div>
+        </section>
+
+        <!-- Sección Nosotros -->
+        <section id="about-section" class="section">
+            <h2 class="section-title">Nuestra Historia</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias similique sunt quis optio corrupti possimus deleniti, nihil vel unde minus eius consequuntur vero a porro. Soluta sequi eligendi debitis nisi..</p>
+                    
+                    <h3>Nuestros Compromisos</h3>
+                    <ul class="about-features">
+                        <li>Ingredientes frescos y de calidad</li>
+                        <li>Preparación artesanal</li>
+                        <li>Servicio rápido y eficiente</li>
+                        <li>Delivery en menos de 45 minutos</li>
+                    </ul>
+                    
+                    <h3>Horario de Atención</h3>
+                    <p>Lunes a Domingo: 12:00 - 23:00</p>
+                </div>
+                
+                <div class="about-image">
+                    <img src="img/interior.jpg" alt="Interior del restaurante">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Carrito de Compras -->
+    <div id="cart-sidebar">
+        <div class="cart-header">
+            <h3><i class="fas fa-shopping-cart"></i> Tu Pedido</h3>
+            <button id="close-cart"><i class="fas fa-times"></i></button>
+        </div>
+        
+        <div id="cart-items">
+            <!-- Los items del carrito se cargarán aquí -->
+        </div>
+        
+        <div id="cart-total">
+            Total: S/ <span id="total-amount">0.00</span>
+        </div>
+        
+        <div id="delivery-options">
+            <div class="delivery-option">
+                <input type="radio" id="pickup" name="delivery" value="pickup" checked>
+                <label for="pickup">Recoger en el local</label>
+            </div>
+            <div class="delivery-option">
+                <input type="radio" id="delivery" name="delivery" value="delivery">
+                <label for="delivery">Envío a domicilio</label>
+            </div>
+        </div>
+        
+        <div id="delivery-notice">
+            <p><i class="fas fa-info-circle"></i> El costo de mensajería es un costo aparte.</p>
+        </div>
+        
+        <button id="checkout-btn">Generar Pedido</button>
+    </div>
+    
+    <div id="cart-overlay" class="cart-overlay"></div>
+
+    <!-- Modal de Pedido -->
+    <div id="order-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Finalizar Pedido</h2>
+            <form id="order-form">
+                <div class="form-group">
+                    <label for="customer-name">Nombre Completo</label>
+                    <input type="text" id="customer-name" required>
+                </div>
+                
+                <div id="delivery-fields">
+                    <div class="form-group">
+                        <label for="customer-address">Dirección</label>
+                        <input type="text" id="customer-address">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="customer-reference">Punto de Referencia</label>
+                        <input type="text" id="customer-reference">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="customer-phone">Teléfono de Contacto</label>
+                    <input type="tel" id="customer-phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="order-notes">Notas adicionales (opcional)</label>
+                    <textarea id="order-notes" rows="3"></textarea>
+                </div>
+                
+                <button id="checkout-btn">Generar Pedido</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Sabor Cubano</h4>
+                    <p>La mejor experiencia gastronómica cubana en tu hogar.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/enmanuel.diazsantos"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/enmanueldiaz784?igsh=NnR3dDVyaDQ1NGt1"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/+5352175957" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Horario</h4>
+                    <p>Lunes - Domingo</p>
+                    <p>12:00 - 23:00</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> xxxxxxxxx</p>
+                    <p><i class="fas fa-phone"></i> +5352175957</p>
+                    <p><i class="fas fa-envelope"></i> daizsantosenmanuel@gmail.com</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Sabor Cubano. </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Notificación -->
+    <div id="notification" class="notification" style="display: none;">
+        <i class="fas fa-check-circle"></i>
+        <span id="notification-message"></span>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
