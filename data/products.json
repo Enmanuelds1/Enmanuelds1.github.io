@@ -1,0 +1,225 @@
+{
+  "featured": [
+    {
+      "id": 1,
+      "name": "Refrigerador",
+      "description": "Refrigerador de alta eficiencia energética con capacidad de 500 litros.",
+      "price": 1200,
+      "image": "refrigerador.jpg",
+      "category": "electrodomesticos",
+      "badge": "Popular"
+    },
+    {
+      "id": 2,
+      "name": "Horno Microondas",
+      "description": "Horno microondas con función de grill y 20 litros de capacidad.",
+      "price": 150,
+      "image": "microondas.jpg",
+      "category": "electrodomesticos",
+      "badge": "Nuevo"
+    },
+    {
+      "id": 3,
+      "name": "Batidora",
+      "description": "Batidora de mano con múltiples velocidades y accesorios.",
+      "price": 50,
+      "image": "batidora.jpg",
+      "category": "electrodomesticos",
+      "badge": "Recomendado"
+    },
+    {
+      "id": 4,
+      "name": "Cafetera",
+      "description": "Cafetera eléctrica con capacidad para 12 tazas y función de mantener caliente.",
+      "price": 80,
+      "image": "cafetera.jpg",
+      "category": "electrodomesticos",
+      "badge": "Especial"
+    }
+  ],
+  "cocinaElectrodomesticos": [
+    {
+      "id": 5,
+      "name": "Licuadora",
+      "description": "Licuadora potente con jarra de vidrio y cuchillas de acero inoxidable.",
+      "price": 60,
+      "image": "licuadora.jpg",
+      "category": "electrodomesticos"
+    },
+    {
+      "id": 6,
+      "name": "Tostadora",
+      "description": "Tostadora de 2 rebanadas con control de dorado y bandeja para migas.",
+      "price": 30,
+      "image": "tostadora.jpg",
+      "category": "electrodomesticos"
+    },
+    {
+      "id": 7,
+      "name": "Freidora de Aire",
+      "description": "Freidora de aire con capacidad de 4 litros, ideal para cocinar sin aceite.",
+      "price": 120,
+      "image": "freidora.jpg",
+      "category": "electrodomesticos"
+    },
+    {
+      "id": 8,
+      "name": "Olla Arrocera",
+      "description": "Olla arrocera automática con capacidad para 10 tazas de arroz.",
+      "price": 40,
+      "image": "olla-arrocera.jpeg",
+      "category": "electrodomesticos"
+    },
+    {
+      "id": 9,
+      "name": "Robot de Cocina",
+      "description": "Robot de cocina multifuncional con varias funciones de cocción.",
+      "price": 250,
+      "image": "robot-cocina.jpg",
+      "category": "electrodomesticos"
+    },
+    {
+      "id": 10,
+      "name": "Extractor de Jugo",
+      "description": "Extractor de jugo de alta potencia, ideal para preparar jugos frescos.",
+      "price": 70,
+      "image": "extractor.jpg",
+      "category": "electrodomesticos"
+    }
+  ],
+  "italiana": [
+    {
+      "id": 11,
+      "name": "Televisor LED",
+      "description": "Televisor LED 55 pulgadas con resolución 4K y Smart TV.",
+      "price": 800,
+      "image": "televisor.jpg",
+      "category": "entretenimiento"
+    },
+    {
+      "id": 12,
+      "name": "Soundbar",
+      "description": "Soundbar con subwoofer inalámbrico y sonido envolvente.",
+      "price": 300,
+      "image": "soundbar.jpg",
+      "category": "entretenimiento",
+      "badge": "Nuevo"
+    },
+    {
+      "id": 13,
+      "name": "Reproductor Blu-ray",
+      "description": "Reproductor Blu-ray con conectividad WiFi y 4K UHD.",
+      "price": 150,
+      "image": "bluray.jpg",
+      "category": "entretenimiento"
+    },
+    {
+      "id": 14,
+      "name": "Videojuegos",
+      "description": "Consola de videojuegos última generación con 1TB de almacenamiento.",
+      "price": 500,
+      "image": "consola.jpg",
+      "category": "entretenimiento"
+    },
+    {
+      "id": 15,
+      "name": "Proyector",
+      "description": "Proyector Full HD con 3000 lúmenes y conexión HDMI.",
+      "price": 350,
+      "image": "proyector.jpg",
+      "category": "entretenimiento"
+    },
+    {
+      "id": 16,
+      "name": "Home Theater",
+      "description": "Sistema de cine en casa 5.1 con Bluetooth.",
+      "price": 400,
+      "image": "home-theater.jpg",
+      "category": "entretenimiento"
+    }
+  ],
+  "bebidas": [
+    {
+      "id": 17,
+      "name": "Lavadora",
+      "description": "Lavadora automática de 15 kg con 10 programas de lavado.",
+      "price": 600,
+      "image": "lavadora.jpg",
+      "category": "linea-blanca"
+    },
+    {
+      "id": 18,
+      "name": "Secadora",
+      "description": "Secadora de ropa con capacidad para 8 kg y sistema de condensación.",
+      "price": 500,
+      "image": "secadora.jpg",
+      "category": "linea-blanca"
+    },
+    {
+      "id": 19,
+      "name": "Lavavajillas",
+      "description": "Lavavajillas integrable con 12 cubiertos y programa rápido.",
+      "price": 450,
+      "image": "lavavajillas.jpg",
+      "category": "linea-blanca"
+    },
+    {
+      "id": 20,
+      "name": "Plancha",
+      "description": "Plancha de vapor con suela de cerámica y sistema anti-cal.",
+      "price": 40,
+      "image": "plancha.jpg",
+      "category": "linea-blanca"
+    },
+    {
+      "id": 21,
+      "name": "Aspiradora",
+      "description": "Aspiradora sin bolsa con filtro HEPA y potencia ajustable.",
+      "price": 120,
+      "image": "aspiradora.jpg",
+      "category": "linea-blanca"
+    },
+    {
+      "id": 22,
+      "name": "Purificador de Aire",
+      "description": "Purificador de aire con filtro de carbón activado para 50m².",
+      "price": 200,
+      "image": "purificador.jpg",
+      "category": "linea-blanca"
+    }
+  ],
+  "postres": [
+    {
+      "id": 23,
+      "name": "Aire Acondicionado",
+      "description": "Aire acondicionado split 12,000 BTU con modo inverter.",
+      "price": 800,
+      "image": "aire-acondicionado.jpg",
+      "category": "climatizacion"
+    },
+    {
+      "id": 24,
+      "name": "Ventilador",
+      "description": "Ventilador de torre con control remoto y 3 velocidades.",
+      "price": 80,
+      "image": "ventilador.jpg",
+      "category": "climatizacion"
+    },
+    {
+      "id": 25,
+      "name": "Calefactor",
+      "description": "Calefactor eléctrico con termostato y protección contra sobrecalentamiento.",
+      "price": 100,
+      "image": "calefactor.jpeg",
+      "category": "climatizacion"
+    },
+    {
+      "id": 26,
+      "name": "Deshumidificador",
+      "description": "Deshumidificador para áreas hasta 30m² con tanque de 2 litros.",
+      "price": 250,
+      "image": "deshumidificador.jpg",
+      "category": "climatizacion"
+    }
+  ]
+}
