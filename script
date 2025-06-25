@@ -1,0 +1,76 @@
+ocument.addEventListener('DOMContentLoaded', function() {
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('nav a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            
+            window.scrollTo({
+                top: targetElement.offsetTop - 80,
+                behavior: 'smooth'
+            });
+        });
+    });
+
+    // Booking form submission
+    const bookingForm = document.getElementById('booking-form');
+    
+    bookingForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const name = document.getElementById('name').value;
+        const phone = document.getElementById('phone').value;
+        const service = document.getElementById('service').value;
+        
+        // Format the WhatsApp message
+        const message = `Hola, quisiera agendar una cita en Barbería Elegance:\n\n` +
+                         `*Nombre:* ${name}\n` +
+                         `*Teléfono:* ${phone}\n` +
+                         `*Servicio:* ${service}\n\n` +
+                         `Por favor confirmar disponibilidad.`;
+        
+        // Encode the message for URL
+        const encodedMessage = encodeURIComponent(message);
+        
+        // Create WhatsApp link
+        const whatsappLink = `https://wa.me/5354325288?text=${encodedMessage}`;
+        
+        // Open WhatsApp in a new tab
+        window.open(whatsappLink, '_blank');
+        
+        // Reset the form
+        bookingForm.reset();
+        
+        // Show confirmation (you could replace this with a fancier modal)
+        alert('Gracias por tu solicitud. Serás redirigido a WhatsApp para confirmar tu cita.');
+    });
+
+    // Add animation to elements when they come into view
+    const animateOnScroll = function() {
+        const elements = document.querySelectorAll('.service-card, .gallery-item');
+        
+        elements.forEach(element => {
+            const elementPosition = element.getBoundingClientRect().top;
+            const screenPosition = window.innerHeight / 1.3;
+            
+            if (elementPosition < screenPosition) {
+                element.style.opacity = '1';
+                element.style.transform = 'translateY(0)';
+            }
+        });
+    };
+    
+    // Set initial state for animated elements
+    document.querySelectorAll('.service-card, .gallery-item').forEach(element => {
+        element.style.opacity = '0';
+        element.style.transform = 'translateY(20px)';
+        element.style.transition = 'all 0.6s ease';
+    });
+    
+    // Run on load and scroll
+    window.addEventListener('load', animateOnScroll);
+    window.addEventListener('scroll', animateOnScroll);
+});
+                        
