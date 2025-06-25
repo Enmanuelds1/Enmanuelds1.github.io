@@ -1,0 +1,25 @@
+{
+  "featured": [
+    {
+      "id": 1,
+      "name": "Corte Clásico",
+      "description": "Corte de cabello clásico para un look elegante.",
+      "price": 350,
+      "image": "corte_clasico.jpeg"
+    },
+    {
+      "id": 2,
+      "name": "Corte Moderno",
+      "description": "Corte moderno con estilo y personalidad.",
+      "price": 350,
+      "image": "corte_moderno.jpeg"
+    },
+    {
+      "id": 3,
+      "name": "dibujo",
+      "description": "Afeitado clásico con navaja para un acabado perfecto.",
+      "price": 350,
+      "image": "afeitado.jpeg"
+    }
+  ]
+}
